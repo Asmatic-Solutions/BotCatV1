@@ -1,5 +1,6 @@
 import * as Discord from "discord.js";
 import * as ConfigFile from "./config";
+import * as Token from "./token";
 import { IBotCommand } from "./api";
 
 const client: Discord.Client = new Discord.Client();
@@ -69,7 +70,7 @@ async function handleCommands(msg: Discord.Message){
             await commandClass.runThisCommand(args,msg,client);
         }catch(exception){
             //If there is a error. Log it.
-            console.log(exception);
+            //console.log(exception);
         }
     }
 }
@@ -87,5 +88,5 @@ function loadCommands(commandsPath: string) {
     }
 }
 
-client.login(ConfigFile.config.token)
+client.login(Token.token);
 
