@@ -1,0 +1,40 @@
+{
+  "name": "nvmg",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "@types/node": "^13.1.2",
+    "@types/request": "^2.48.4",
+    "@types/superagent": "^4.1.4",
+    "axios": "^0.19.2",
+    "discord.js": "^11.5.1",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "ffmpeg-static": "^3.0.0",
+    "node-gyp": "^5.0.7",
+    "opus-encode": "^2.0.2",
+    "opusscript": "0.0.7",
+    "random-puppy": "^1.1.0",
+    "rebuild": "^0.1.2",
+    "request": "^2.88.0",
+    "superagent": "^5.1.3",
+    "ytdl": "^1.1.0",
+    "ytdl-core": "^1.0.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MrR3set/AsmaticGamingBotcat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrR3set/AsmaticGamingBotcat/issues"
+  },
+  "homepage": "https://github.com/MrR3set/AsmaticGamingBotcat#readme",
+  "description": ""
+}
