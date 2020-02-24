@@ -22,7 +22,9 @@ export default class lol implements IBotCommand{
             this.getWeekly(msgObject)
         }
 
-        if(args[0]==="c" || args[0]==="champ" || args[0]==="champion"){       
+        if(args[0]==="c" || args[0]==="champ" || args[0]==="champion"){    
+            
+            //check if name is on list first.
             if(args[1]==="r" || args[1]==="rand" || args[1]==="random"){
                 this.getChampion(msgObject,getChampInfo((Math.floor(Math.random() * lolconfig.lolcfg.champs.length))).name,client);
              }else{
@@ -57,7 +59,6 @@ export default class lol implements IBotCommand{
         msgObject.channel.send(lolEmbed);  
     }
 
-
     async getWeekly(msgObject: Discord.Message){
         const api = "https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=" + lolconfig.lolcfg.api;
         let champions: any[] = [];
@@ -84,6 +85,3 @@ function getChampInfo(id:any){
     return lolconfig.lolcfg.champs.find(Element => Element.key == id);
     //Find id in champs array. Then return champ obj
 }
-
-
-

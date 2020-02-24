@@ -13,7 +13,8 @@ export let config = {
         "play",
         "team",
         "rr",
-        "lol"
+        "lol",
+        "unmute"
     ]
 }
 

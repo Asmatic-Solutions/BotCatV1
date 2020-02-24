@@ -14,6 +14,7 @@ export default class isoncommand implements IBotCommand{
     }
 
     runThisCommand(args: string[], msgObject: Discord.Message, client:Discord.Client ):void{
+        console.log("yes yes yes");
     }
 
 
