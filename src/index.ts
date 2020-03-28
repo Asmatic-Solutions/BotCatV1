@@ -34,10 +34,7 @@ client.on("ready", ()=>{
         setTimeout(setActivity, 10000);
     }
     
-
     console.log("Bot is OK");
-
-
 })
 
 //Every time that the bot is online and any message is written in the server it will do this:
@@ -51,7 +48,6 @@ client.on("message", msg => {
     //Handle command
     handleCommands(msg);
 })
-
 
 async function handleCommands(msg: Discord.Message){
     //Split string ito command and args
@@ -89,4 +85,3 @@ function loadCommands(commandsPath: string) {
 }
 
 client.login(Token.token);
-

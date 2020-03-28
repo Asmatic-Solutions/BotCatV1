@@ -58,7 +58,11 @@ export default class unmute implements IBotCommand{
             msgObject.channel.send("Member must be in the same voice channel");
             return;
         }
-
+        if(vMembers.indexOf(msgObject.mentions.users.array()[0].bot)){
+            msgObject.channel.send(`${msgObject.mentions.users.array()[0].username} Is a bot you ape`);
+            return;
+        }
+        
         //Set up an interval to run every second, moving the target back and forth. Interval is breaken if user unmutes himself
         let intervalID = setInterval(() => {              
             if(vMembs[vMembers.indexOf(msgObject.mentions.users.array()[0])].selfDeaf){

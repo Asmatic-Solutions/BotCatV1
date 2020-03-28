@@ -50,7 +50,7 @@ export default class lol implements IBotCommand{
         .setImage(`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champ.name}_0.jpg`)
         .setTimestamp()
         .setFooter(`League of legends champ requested by ${msgObject.author.username}`, `${msgObject.author.avatarURL}`);
-
+        
         champ.tags.forEach(e => {
             cType += e + ", ";
         })

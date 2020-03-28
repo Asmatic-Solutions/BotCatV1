@@ -14,7 +14,8 @@ export let config = {
         "team",
         "rr",
         "lol",
-        "unmute"
+        "unmute",
+        "temp"
     ]
 }
 
