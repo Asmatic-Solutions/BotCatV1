@@ -12,7 +12,7 @@
     "@types/node": "^13.1.2",
     "@types/request": "^2.48.4",
     "@types/superagent": "^4.1.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "discord.js": "^11.5.1",
     "ffmpeg": "0.0.4",
     "ffmpeg-binaries": "^3.2.2-3",
